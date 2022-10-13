@@ -10,7 +10,7 @@ function InputRoot({ children }: InputRootProps) {
   return (
     <div
       className={clsx(
-        "flex items-center gap-3 py-4 px-3 h-12 rounded bg-gray-800   w-full focus-within: ring-2 ring-cyan-300"
+        "flex items-center gap-3 py-4 px-3 h-12 rounded bg-gray-800   w-full focus-within:ring-1 ring-cyan-300"
       )}
     >
       {children}
