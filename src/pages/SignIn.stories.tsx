@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SignIn } from "./Signin";
+import { SignIn } from "./SignIn";
 import { userEvent, waitFor, within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
 import { rest } from "msw";
 
 export default {
-  title: "Pages/Signin",
+  title: "Pages/SignIn",
   component: SignIn,
   args: {},
   argTypes: {},

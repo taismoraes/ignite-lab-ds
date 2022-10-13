@@ -7,7 +7,7 @@ import { Heading } from "./components/Heading";
 import { Input } from "./components/Input";
 import { Link } from "./components/Link";
 import { Text } from "./components/Text";
-import { SignIn } from "./pages/Signin";
+import { SignIn } from "./pages/SignIn";
 import "./styles/global.css";
 
 export function App() {
