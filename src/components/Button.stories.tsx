@@ -15,7 +15,9 @@ export default {
 
 export const Default: StoryObj<ButtonProps> = {};
 
-const Template: ComponentStory<typeof Button> = () => <Button>Teste</Button>;
+const Template: ComponentStory<typeof Button> = () => (
+  <Button>Create Account</Button>
+);
 
 export const Example = Template.bind({});
 Example.parameters = {
