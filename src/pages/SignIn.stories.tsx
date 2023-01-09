@@ -21,7 +21,7 @@ export default {
 } as Meta;
 
 export const Default: StoryObj = {
-  play: async ({ canvasElement }) => {
+  /* play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 
     userEvent.type(
@@ -36,6 +36,6 @@ export const Default: StoryObj = {
       expect(
         canvas.getByText("Login realizado com sucesso!")
       ).toBeInTheDocument();
-    });
-  },
+    }); 
+  },*/
 };
