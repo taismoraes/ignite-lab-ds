@@ -30,7 +30,7 @@ jobs:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
       - name: Deploy to chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@v3
         # Options required for Chromatic's GitHub Action
         with:
           #👇 Chromatic projectToken,
