@@ -28,10 +28,9 @@ jobs:
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
       - name: Publish to Chromatic
-              uses: chromaui/action@v1
-              # Chromatic GitHub Action options
-              with:
-                #👇 Chromatic projectToken,
-              projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-              token: ${{ secrets.GITHUB_TOKEN }}
+        uses: chromaui/action@v1
+          with:
+            projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+            token: ${{ secrets.GITHUB_TOKEN }}
