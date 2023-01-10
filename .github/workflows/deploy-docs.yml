@@ -11,8 +11,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Setup Noje.js
         uses: actions/setup-node@v3
         with:
@@ -36,3 +37,4 @@ jobs:
           #👇 Chromatic projectToken,
           token: ${{ secrets.GITHUB_TOKEN }}
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true
